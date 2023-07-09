@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Use tests automation">
+
+    <test name="API regression">
+        <groups>
+            <run>
+                <include name="createBooking" />
+                <include name="getBooking" />
+                <include name="getBookingIds" />
+                <include name="partialUpdateBooking" />
+                <include name="updateBooking" />
+                <include name="deleteBooking" />
+            </run>
+        </groups>
+        <classes>
+            <class name="apiTests.CreateBookingTest"/>
+        </classes>
+    </test>
+</suite>
